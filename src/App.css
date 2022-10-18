@@ -1,0 +1,194 @@
+:root {
+  --placeHolderColor: #B7BDC9;
+  --subheadColor: #5C6984;
+  --violetColor: #664DE5;
+  --whiteColor: white;
+  --lightgrey: #C1C9DB;
+  --borderColor: #EAEEF5;
+
+}
+
+* {
+  padding: 0;
+}
+
+::placeholder {
+  color: var(--placeHolderColor);
+}
+
+.optionalText {
+  font-weight: 400;
+  color: var(--lightgrey);
+}
+
+.App {
+  display: grid;
+  place-content: center;
+}
+
+.formContent {
+  width: 35vw;
+  transition: 1.5s;
+}
+
+.titleName {
+  text-align: center;
+}
+
+.headingText {
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.captionText {
+  font-size: small;
+  font-weight: 500;
+  color: #858FA3;
+  text-align: center;
+
+}
+
+.labelText {
+  color: var(--subheadColor);
+  font-weight: 600;
+  font-size: small;
+  margin: 10px 0;
+  text-align: left !important;
+}
+
+.spacingBetweenContent {
+  margin-top: 40px;
+}
+
+.inputStyle {
+  outline: none;
+  border: 1px solid var(--borderColor);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.inLineInput {
+  outline: 1px solid var(--borderColor);
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.inLineLabel {
+  display: inherit;
+  color: var(--placeHolderColor);
+  background-color: #F8F9FC;
+  place-items: center;
+  border-right: 1px solid var(--borderColor);
+  outline: none;
+  height: 100%;
+  text-align: center;
+  font-size: .7em;
+  border-radius: 4px 0 0 4px;
+  border-top: none;
+}
+
+.buttonStyle {
+  cursor: pointer;
+  background-color: var(--violetColor);
+  color: var(--whiteColor);
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 35px 0;
+  border-radius: 5px;
+}
+
+.gridTemplate {
+  display: grid;
+  place-content: center;
+
+  grid-template-columns: 0.4fr 0.4fr;
+  gap: 10px
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  padding: 14px;
+}
+
+.subhead {
+
+  font-size: small;
+}
+
+.subcontent {
+  color: var(--subheadColor);
+  font-size: smaller;
+}
+
+.card_selected {
+  outline: 1.4px solid var(--violetColor);
+}
+
+.completedBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--violetColor);
+}
+
+.completedContainer {
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.leftArm {
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+  top: 54%;
+  left: 49%;
+  translate: -61% -65%;
+  transform: rotate(138deg);
+}
+
+.rightArm {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  translate: 20% -55%;
+  transform: rotate(50deg);
+}
+
+.indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--subheadColor);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: x-small;
+  border: 1px solid var(--borderColor);
+}
+
+.indicatorBox {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.step1,
+.step2,
+.step3,
+.step4 {
+  transition-delay: 1s;
+}
